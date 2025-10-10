@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="10sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/descr"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="0dp"
+        android:text="@string/lorem_30w">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/promptDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="Sollecito" />
+
+    <Button
+        android:id="@+id/modifyTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promptDev"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:text="Modifica" />
+
+    <Button
+        android:id="@+id/deleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/modifyTask"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:text="Cancella" />
+
+    <TextView
+        android:id="@+id/dev"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/descr"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lorem_30w"/>
+
+    <TextView
+        android:id="@+id/expiring"
+        android:paddingStart="10sp"
+        android:paddingEnd="16sp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dev"
+        />
+
+
+    <TextView
+        android:id="@+id/progressTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/expiring"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_below="@id/progressTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:max="100">
+    </SeekBar>
+
+
+    <View
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Titolo -->
+        <TextView
+            android:id="@+id/addTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titolo"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_below="@id/addTitleText"
+            android:id="@+id/addTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserisci il titolo" />
+
+        <!-- Descrizione -->
+        <TextView
+            android:id="@+id/addDescrText"
+            android:layout_below="@id/addTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrizione"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_below="@id/addDescrText"
+            android:id="@+id/addDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserisci la descrizione" />
+
+        <!-- A chi è assegnato -->
+        <TextView
+            android:id="@+id/addAssignedText"
+            android:layout_below="@id/addDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A chi è assegnato?"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/addAssigned"
+            android:layout_below="@+id/addAssignedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserisci il nome della persona assegnata" />
+
+        <!-- Data di scadenza -->
+        <TextView
+            android:id="@+id/addExpiringText"
+            android:layout_below="@id/addAssigned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data di scadenza"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <DatePicker
+            android:id="@+id/addDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addExpiringText"
+            android:layout_marginTop="0dp"
+            android:calendarViewShown="true" />
+
+        <TimePicker
+            android:id="@+id/addTime"
+            android:layout_width="384dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/addDate"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/submitTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addTime"
+            android:layout_marginTop="5sp"
+            android:text="Salva i Dati" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/subDescr"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10sp"
+        android:paddingTop="10sp"
+        android:paddingEnd="10sp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/modifySubtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="Modifica" />
+
+    <Button
+        android:id="@+id/deleteSubtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/modifySubtask"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:text="Cancella" />
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/subDescr">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/state"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priority"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/expiringSubtask"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/state"
+        />
+
+
+    <TextView
+        android:id="@+id/progressSubtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/expiringSubtask"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp">
+
+    </TextView>
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_below="@id/progressSubtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:max="100">
+    </SeekBar>
+
+    <Button
+        android:id="@+id/viewSubComment"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="12sp"
+        android:paddingEnd="12sp"
+        android:text="Commenti" />
+
+
+    <View
+        android:layout_below="@id/viewSubComment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+
+</RelativeLayout>

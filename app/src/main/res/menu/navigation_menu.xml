@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home2"
+        android:visible="true"
+        />
+
+    <item android:title="Pagina Utente"
+        android:id="@+id/userpage"
+        android:visible="false"
+        />
+
+
+    <item android:title="Chat"
+        android:id="@+id/chat"
+        android:visible="false"
+        />
+
+
+    <item android:title="@string/login"
+        android:id="@+id/login"
+        android:visible="true"
+        />
+
+    <item android:title="Registrarsi"
+        android:id="@+id/register"
+        android:visible="true"
+        />
+
+    <item android:title="@string/logout"
+        android:id="@+id/logout"
+        android:visible="false"
+        />
+
+</menu>

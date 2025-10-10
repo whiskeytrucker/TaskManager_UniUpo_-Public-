@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:title="Cerca" />
+
+            <Button
+                android:id="@+id/reset"
+                android:text="Reset"
+                android:layout_below="@id/search_bar"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/bg_tint"
+                />
+
+
+            <Button
+                android:id="@+id/filter"
+                android:text="Filtri"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/reset"
+                android:layout_alignBaseline="@id/reset"
+                android:layout_below="@id/search_bar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_below="@id/filter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="370dp"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Titolo -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titolo:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_below="@id/titleText"
+            android:id="@+id/modTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Descrizione -->
+        <TextView
+            android:id="@+id/descrText"
+            android:layout_below="@id/modTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrizione:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:layout_below="@id/descrText"
+            android:id="@+id/modDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- A chi è assegnato -->
+        <TextView
+            android:id="@+id/assignedText"
+            android:layout_below="@id/modDescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persona assegnata:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/modAssigned"
+            android:layout_below="@+id/assignedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Progress -->
+        <TextView
+            android:id="@+id/progressTaskText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/modAssigned"
+            android:text="Progresso:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/progressTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/progressTaskText"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_below="@id/progressTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:max="100">
+        </SeekBar>
+
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/expiringText"
+            android:layout_below="@id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data di scadenza:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <DatePicker
+            android:id="@+id/modDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expiringText"
+            android:layout_marginTop="0dp"
+            android:calendarViewShown="true" />
+
+        <TimePicker
+            android:id="@+id/modTime"
+            android:layout_width="384dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/modDate"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/submitModifyButton"
+            android:layout_below="@id/modTime"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salva i Dati" />
+    </RelativeLayout>
+</ScrollView>
