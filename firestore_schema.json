@@ -1,0 +1,53 @@
+{
+  "chat": {
+    "_docs": {},
+    "_schema": {
+      "user0": "string",
+      "user1": "string",
+      "messages": {
+        "sender": "bool",
+        "text": "string",
+        "timestamp": "Date"
+      }
+    }
+  },
+  "devInProject": {
+    "_docs": {},
+    "_schema": {
+      "dev": "string",
+      "idProject": "string"
+    }
+  },
+  "notifiche": {
+    "_docs": {},
+    "_schema": {
+      "user": "string"
+    }
+  },
+  "projects": {
+    "_docs": {},
+    "_schema": {
+      "descr": "string",
+      "titolo": "string",
+      "progress": "number",
+      "autore": "string",
+      "assigned": "string"
+    }
+  },
+  "supervisore": {
+    "_docs": {},
+    "_schema": {
+      "pl": "string",
+      "pm": "string",
+      "dev": "string",
+      "dev2": "string"
+    }
+  },
+  "tipo_utenti": {
+    "_docs": {},
+    "_schema": {
+      "tipo": "string",
+      "username": "string"
+    }
+  }
+}
